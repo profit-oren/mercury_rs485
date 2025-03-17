@@ -1,0 +1,79 @@
+{
+  "title": "Electricity metering",
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "user": {
+        "data": {
+        "device": "USB to Serial Port Adapter",
+        "model" : "Model of the Mercury type device",
+        "then" : "Install Mercury Dashboard in Sidebar"
+        },
+        "description": "Determine the port to which Mercury is connected."
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "online_status": {
+        "name": "Online status"
+      }
+    },
+    "sensor": {
+      "ampere_1_phase": {
+        "name": "Electric current 1 phase"
+      },
+      "ampere_2_phase": {
+        "name": "Electric current 2 phase"
+      },
+      "ampere_3_phase": {
+        "name": "Electric current 3 phase"
+      },
+      "voltage_1_phase": {
+        "name": "Voltage 1 phase"
+      },
+      "voltage_2_phase": {
+        "name": "Voltage 2 phase"
+      },
+      "voltage_3_phase": {
+        "name": "Voltage 3 phase"
+      },
+      "power_consumption": {
+        "name": "Total consumption"
+      },
+      "power_consumption_f1": {
+        "name": "Consumption 1 phase"
+      },
+      "power_consumption_f2": {
+        "name": "Consumption 2 phase"
+      },
+      "power_consumption_3": {
+        "name": "Consumption 3 phase"
+      },
+      "current_day_energy": {
+        "name": "Current day energy"
+      },
+      "last_day_energy": {
+        "name": "Last day energy"
+      },
+      "last_month_energy": {
+        "name": "Last month energy"
+      },
+      "current_year_energy": {
+        "name": "Current year energy"
+      },
+      "last_year_energy": {
+        "name": "Last year energy"
+      },
+      "total_energy": {
+        "name": "Total energy"
+      }
+    }
+  }
+}

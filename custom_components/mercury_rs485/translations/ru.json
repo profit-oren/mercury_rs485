@@ -1,0 +1,79 @@
+{
+  "title": "Учет электроэнергии",
+  "config": {
+      "abort": {
+          "already_configured": "Данное устройство уже установлено"
+      },
+      "error": {
+          "cannot_connect": "Нет соединения с устройством",
+          "unknown": "Ошибка, смотрите журнал сервера для диагностики"
+      },
+      "step": {
+          "user": {
+              "data": {
+                  "device": "USB - адаптер последовательного порта",
+                  "model" : "Модель устройства типа Меркурий",
+                  "then" : "Установить дашборд Меркурий в боковую панель"
+              },
+              "description": "Выберите устройство и адаптер для подключения."
+          }
+      }
+  },
+  "entity": {
+    "binary_sensor": {
+       "online_status": {
+        "name": "Статус подключения"
+       }
+    },
+    "sensor": {
+      "ampere_1_phase": {
+        "name": "Электро-ток 1 фаза"
+      },
+      "ampere_2_phase": {
+        "name": "Электро-ток 2 фаза"
+      },
+      "ampere_3_phase": {
+        "name": "Электро-ток 3 фаза"
+      },
+      "voltage_1_phase": {
+        "name": "Напряжение 1 фаза"
+      },
+      "voltage_2_phase": {
+        "name": "Напряжение 2 фаза"
+      },
+      "voltage_3_phase": {
+        "name": "Напряжение 3 фаза"
+      },
+      "power_consumption": {
+        "name": "Общее потребление"
+      },
+      "power_consumption_f1": {
+        "name": "Потребление 1 фаза"
+      },
+      "power_consumption_f2": {
+        "name": "Потребление 2 фаза"
+      },
+      "power_consumption_f3": {
+        "name": "Потребление 3 фаза"
+      },
+      "current_day_energy": {
+        "name": "Текущий день энергия"
+      },
+      "last_day_energy": {
+        "name": "Прошлый день энергия"
+      },
+      "last_month_energy": {
+        "name": "Прошлый месяц энергия"
+      },
+      "current_year_energy": {
+        "name": "Текущий год энергия"
+      },
+      "last_year_energy": {
+        "name": "Прошлый год энергия"
+      },
+      "total_energy": {
+        "name": "Общее потребление энергии"
+      }
+    }
+  }
+}
